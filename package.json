@@ -1,0 +1,39 @@
+{
+  "name": "jolt-cli",
+  "version": "0.0.3",
+  "description": "Command line utility for AtomicLti.com",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel -d lib/ src/",
+    "watch": "babel ./src --watch -d lib",
+    "prepublish": "npm run build",
+    "release": "./scripts/release.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atomicjolt/jolt-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "LTI",
+    "AtomicLti.com"
+  ],
+  "author": "AtomicJolt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atomicjolt/jolt-cli/issues"
+  },
+  "homepage": "https://github.com/atomicjolt/jolt-cli#readme",
+  "bin": {
+    "jolt": "lib/cli.js"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.1.18",
+    "commander": "^2.9.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.4.5",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13"
+  }
+}
