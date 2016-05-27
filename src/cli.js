@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
-import program  from 'commander';
- 
+var program = require('commander');
 
 program
     .version('0.0.1')
@@ -13,14 +12,15 @@ if(!program.args.length) {
 } else {
   switch(program.args[0]){
     case "create":
-      if(args[1] == "instance"){
+      if(program.args[1] == "instance"){
         // Create an instance
         // Add instance json ie usu-dev, usu-prod, etc
       } else {
+
         // Create an app
         // Clone github repo
         // Change values
-        // Add initial instances - dev, prod, staging
+        // Add initial instances - dev, prod, staging'
       }
       break;
     case "deploy":
@@ -29,7 +29,12 @@ if(!program.args.length) {
       // Will need to execute build in current directory, get build files and upload them
       break;
     case "install":
+    
       // Perform LTI install
       break;
   }
+}
+
+function fetchRepo(){
+
 }
