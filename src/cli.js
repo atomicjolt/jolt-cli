@@ -29,12 +29,8 @@ if(!program.args.length) {
       // Will need to execute build in current directory, get build files and upload them
       break;
     case "install":
-    
+
       // Perform LTI install
       break;
   }
-}
-
-function fetchRepo(){
-
 }
